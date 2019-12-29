@@ -1,0 +1,4 @@
+nodejs_version: "12.x"
+nodejs_install_npm_user: "{{ ansible_ssh_user }}"
+nodejs_npm_global_packages:
+  - name: http-server
