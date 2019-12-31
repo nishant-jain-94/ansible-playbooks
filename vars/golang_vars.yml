@@ -1,0 +1,5 @@
+go_version: 1.13.5
+GOROOT: /usr/local/go
+GOPATH: /home/nishant/workspace/go-projects
+build_go_from_source: false
+go_install_clean: true
