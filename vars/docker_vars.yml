@@ -1,0 +1,6 @@
+docker_edition: ce
+docker_service_state: started
+docker_install_compose: true
+docker_compose_version: 1.25.0
+docker_compose_path: /usr/local/bin/docker-compose
+docker_package: docker-ce

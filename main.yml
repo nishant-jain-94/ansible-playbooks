@@ -1,0 +1,23 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Screen Terminator
+      apt:
+        name: screen
+        update_cache: yes
+        state: present
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  vars_files:
+    - vars/nodejs_vars.yml
+    - vars/terraform_vars.yml
+    - vars/golang_vars.yml
+    - vars/docker_vars.yml
+    - vars/vscode_vars.yml  
+  roles:
+    - geerlingguy.nodejs
+    - migibert.terraform
+    - fubarhouse.golang
+    - geerlingguy.docker
+    - gantsign.visual-studio-code  
