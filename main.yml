@@ -14,10 +14,12 @@
     - vars/terraform_vars.yml
     - vars/golang_vars.yml
     - vars/docker_vars.yml
-    - vars/vscode_vars.yml  
+    - vars/vscode_vars.yml
+    - vars/pip_vars.yml
   roles:
     - geerlingguy.nodejs
     - migibert.terraform
     - fubarhouse.golang
     - geerlingguy.docker
-    - gantsign.visual-studio-code  
+    - gantsign.visual-studio-code
+    - geerlingguy.pip
