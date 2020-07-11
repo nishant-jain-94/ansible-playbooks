@@ -39,3 +39,6 @@ ansible-playbook --ask-become-pass -i localhost, main.yml --connection=local
 - alsa-utils
 - vim
 - Azure CLI
+- GCloud
+- obs-studio
+- openshot-qt
