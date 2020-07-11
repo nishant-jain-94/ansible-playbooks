@@ -7,6 +7,26 @@
         name: screen
         update_cache: yes
         state: present
+    - name: Install Network Tools
+      apt:
+        name: net-tools
+        state: present
+    - name: Install Wireless Tools
+      apt:
+        name: wireless-tools
+        state: present
+    - name: Install Network Manager
+      apt:
+        name: network-manager
+        state: present
+    - name: Install Pavucontrol
+      apt:
+        name: pavucontrol
+        state: present
+    - name: Install Rofi
+      apt:
+        name: rofi
+        state: present
   vars:
     ansible_python_interpreter: /usr/bin/python3
   vars_files:
@@ -25,3 +45,5 @@
     - gantsign.visual-studio-code
     - geerlingguy.pip
     - geerlingguy.java
+    - nephelaiio.rxvt-unicode
+    - pixelart.chrome

@@ -4,9 +4,9 @@ users:
   - username: nishant
     visual_studio_code_extensions:
       - EditorConfig.EditorConfig
-      - ms-vscode.csharp
+      - ms-dotnettools.csharp
       - ms-azuretools.vscode-docker
-      - ms-vscode.go
+      - golang.Go
       - viktorqvarfordt.vscode-pitch-black-theme
       - Nimda.deepdark-material
       - ms-azuretools.vscode-azureterraform
