@@ -27,6 +27,14 @@
       apt:
         name: rofi
         state: present
+    - name: Install Alsa Utils
+      apt:
+        name: alsa-utils
+        state: present
+    - name: Install vim
+      apt:
+        name: vim
+        state: present
   vars:
     ansible_python_interpreter: /usr/bin/python3
   vars_files:
@@ -45,5 +53,4 @@
     - gantsign.visual-studio-code
     - geerlingguy.pip
     - geerlingguy.java
-    - nephelaiio.rxvt-unicode
     - pixelart.chrome
