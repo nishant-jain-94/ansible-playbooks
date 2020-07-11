@@ -16,3 +16,8 @@ users:
       - shd101wyy.markdown-preview-enhanced
       - Arjun.swagger-viewer
       - donjayamanne.githistory
+      - ms-azuretools.vscode-azurefunctions
+      - ms-azuretools.vscode-docker
+      - GoogleCloudTools.cloudcode
+      - ms-vscode.azure-account
+      - ms-kubernetes-tools.vscode-kubernetes-tools

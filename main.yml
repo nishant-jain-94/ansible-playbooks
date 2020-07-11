@@ -16,6 +16,7 @@
     - vars/docker_vars.yml
     - vars/vscode_vars.yml
     - vars/pip_vars.yml
+    - vars/helm.yml
   roles:
     - geerlingguy.nodejs
     - migibert.terraform
@@ -23,3 +24,4 @@
     - geerlingguy.docker
     - gantsign.visual-studio-code
     - geerlingguy.pip
+    - geerlingguy.java

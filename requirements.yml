@@ -4,3 +4,5 @@
 - src: geerlingguy.docker
 - src: gantsign.visual-studio-code
 - src: geerlingguy.pip
+- src: geerlingguy.helm
+- src: geerlingguy.git

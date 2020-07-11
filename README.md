@@ -17,5 +17,5 @@ ansible-galaxy install -r requirements.yml
 ## Command
 
 ```
-ansible-playbook --ask-become-pass -i localhost, main.yaml --connection=local
+ansible-playbook --ask-become-pass -i localhost, main.yml --connection=local
 ```
