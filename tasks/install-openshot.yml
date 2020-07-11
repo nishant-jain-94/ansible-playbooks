@@ -1,0 +1,9 @@
+- name: Add Repository for OpenShot
+  apt_repository:
+    repo: ppa:openshot.developers/ppa
+    state: present
+- name: Install OpenShot
+  apt:
+    name: openshot-qt
+    state: present
+    update_cache: yes

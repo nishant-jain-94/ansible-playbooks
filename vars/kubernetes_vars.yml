@@ -1,0 +1,3 @@
+kuberenetes_packages:
+  - name: kubectl
+    state: present

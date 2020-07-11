@@ -1,0 +1,12 @@
+- name: Install ffmpeg
+  apt:
+    name: ffmpeg
+    state: present
+- name: Add Repository for Obs
+  apt_repository:
+    repo: ppa:obsproject/obs-studio
+- name: Install Obs Studio
+  apt:
+    name: obs-studio
+    state: present
+    update_cache: yes

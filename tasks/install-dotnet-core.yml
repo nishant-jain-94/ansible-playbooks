@@ -1,0 +1,14 @@
+- name: Add Microsoft Package Signing Key
+  shell: wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+- name: Install Microsoft Prod Packages
+  shell: sudo dpkg -i packages-microsoft-prod.deb
+- name: Install apt-transport-https
+  apt:
+    name: apt-transport-https
+    state: present
+    update_cache: yes
+- name: Install Dotnet SDK 3.1
+  apt:
+    name: dotnet-sdk-3.1
+    state: present
+    update_cache: yes

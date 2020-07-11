@@ -1,0 +1,14 @@
+- name: Install Screen Terminator
+  apt:
+    name: screen
+    update_cache: yes
+    state: present
+  with_items:
+    - screen
+    - net-tools
+    - wireless-tools
+    - network-manager
+    - pavucontrol
+    - rofi
+    - alsa-utils
+    - vim

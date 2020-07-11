@@ -2,39 +2,14 @@
 - hosts: localhost
   become: yes
   tasks:
-    - name: Install Screen Terminator
-      apt:
-        name: screen
-        update_cache: yes
-        state: present
-    - name: Install Network Tools
-      apt:
-        name: net-tools
-        state: present
-    - name: Install Wireless Tools
-      apt:
-        name: wireless-tools
-        state: present
-    - name: Install Network Manager
-      apt:
-        name: network-manager
-        state: present
-    - name: Install Pavucontrol
-      apt:
-        name: pavucontrol
-        state: present
-    - name: Install Rofi
-      apt:
-        name: rofi
-        state: present
-    - name: Install Alsa Utils
-      apt:
-        name: alsa-utils
-        state: present
-    - name: Install vim
-      apt:
-        name: vim
-        state: present
+    - name: Import tasks to install utils
+      import_tasks: tasks/install-utils.yml
+    - name: Import tasks to install Azure CLI
+      import_tasks: tasks/install-azure-cli.yml
+    - name: Import tasks to install Dotnet Core 3.1
+      import_tasks: tasks/install-dotnet-core.yml
+    - name: Import tasks to install Obs
+      import_tasks: tasks/install-obs.yml
   vars:
     ansible_python_interpreter: /usr/bin/python3
   vars_files:
@@ -54,3 +29,4 @@
     - geerlingguy.pip
     - geerlingguy.java
     - pixelart.chrome
+    - geerlingguy.kubernetes
