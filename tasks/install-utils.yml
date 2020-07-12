@@ -12,3 +12,4 @@
     - rofi
     - alsa-utils
     - vim
+    - font-manager
