@@ -1,0 +1,4 @@
+- name: Download Slack
+  command: wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb
+- name: Install Slack
+  command: sudo dpkg -i slack-desktop-*.deb

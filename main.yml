@@ -10,6 +10,10 @@
       import_tasks: tasks/install-dotnet-core.yml
     - name: Import tasks to install Obs
       import_tasks: tasks/install-obs.yml
+    - name: Import tasks to install Slack
+      import_tasks: tasks/install-slack.yml
+    - name: Import tasks to install Azure Functions Cli
+      import_tasks: tasks/install-az-func-cli.yml
   vars:
     ansible_python_interpreter: /usr/bin/python3
   vars_files:
@@ -21,6 +25,7 @@
     - vars/pip_vars.yml
     - vars/helm.yml
   roles:
+    - gantsign.helm
     - geerlingguy.nodejs
     - migibert.terraform
     - fubarhouse.golang
