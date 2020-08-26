@@ -5,11 +5,11 @@
     state: present
   with_items:
     - screen
-    - net-tools
-    - wireless-tools
-    - network-manager
-    - pavucontrol
-    - rofi
-    - alsa-utils
-    - vim
-    - font-manager
+      # - net-tools
+      # - wireless-tools
+      # - network-manager
+      # - pavucontrol
+      # - rofi
+      # - alsa-utils
+      # - vim
+      # - font-manager

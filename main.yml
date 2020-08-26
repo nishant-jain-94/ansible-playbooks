@@ -25,10 +25,10 @@
     - vars/pip_vars.yml
     - vars/helm.yml
   roles:
-    - gantsign.helm
+      # - gantsign.helm
     - geerlingguy.nodejs
-    - migibert.terraform
-    - fubarhouse.golang
+      # - migibert.terraform
+      # - fubarhouse.golang
     - geerlingguy.docker
     - gantsign.visual-studio-code
     - geerlingguy.pip
